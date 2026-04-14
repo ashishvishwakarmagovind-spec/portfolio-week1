@@ -7,27 +7,23 @@
 </head>
 <body>
 
-  <!-- Header Section -->
   <header>
     <h1>Vishwakarma Ashish Govind Prasad</h1>
     <p>Web Development Intern | BCA Student</p>
 
-    <!-- Navigation Menu (Internal Links) -->
     <nav aria-label="Primary">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <hr />
   </header>
 
-  <!-- Main Content -->
   <main>
-
-    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
 
@@ -52,7 +48,6 @@
       <hr />
     </section>
 
-    <!-- Skills Section (List Requirement) -->
     <section id="skills">
       <h2>Skills</h2>
       <ul>
@@ -65,20 +60,19 @@
       <hr />
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
       <h2>Projects</h2>
 
       <article>
         <h3>1) Personal Portfolio Website</h3>
         <p>
-          A simple HTML portfolio containing About, Skills, Projects, and Contact
+          A simple HTML portfolio containing About, Skills, Projects, Gallery, and Contact
           sections with internal navigation links.
         </p>
         <p>
           Link:
-          <a href="https://github.com/" target="_blank" rel="noopener">
-            Project Repository (replace with your link)
+          <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener noreferrer">
+            Project Repository
           </a>
         </p>
       </article>
@@ -91,8 +85,8 @@
         </p>
         <p>
           Link:
-          <a href="https://example.com" target="_blank" rel="noopener">
-            Live Demo (replace with your link)
+          <a href="https://your-live-link.com" target="_blank" rel="noopener noreferrer">
+            Live Demo
           </a>
         </p>
       </article>
@@ -100,49 +94,89 @@
       <hr />
     </section>
 
-    <!-- Contact Section (Form Requirement) -->
+    <!-- Simple Image Gallery -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Some images added to practice HTML image tags and alt text.</p>
+
+      <figure>
+        <img src="images/gallery-1.jpeg" alt="Gallery image 1" width="240" />
+        <figcaption>Gallery Image 1</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/gallery-2.jpeg" alt="Gallery image 2" width="240" />
+        <figcaption>Gallery Image 2</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/gallery-3.jpeg" alt="Gallery image 3" width="240" />
+        <figcaption>Gallery Image 3</figcaption>
+      </figure>
+
+      <hr />
+    </section>
+
     <section id="contact">
       <h2>Contact Me</h2>
       <p>If you want to connect, please fill out the form below:</p>
 
-      <form action="#" method="post">
-        <div>
+      <!-- HTML-only "working" option: opens email client -->
+      <!-- Replace the email below with your real email -->
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <p>
           <label for="name">Full Name:</label><br />
-          <input type="text" id="name" name="name" placeholder="Enter your name" required />
-        </div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+            minlength="2"
+            maxlength="50"
+          />
+        </p>
 
-        <br />
-
-        <div>
+        <p>
           <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" placeholder="Enter your email" required />
-        </div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </p>
 
-        <br />
-
-        <div>
+        <p>
           <label for="message">Message:</label><br />
-          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-        </div>
-
-        <br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message..."
+            required
+            minlength="10"
+            maxlength="500"
+          ></textarea>
+        </p>
 
         <button type="submit">Send Message</button>
+        <button type="reset">Clear</button>
       </form>
 
       <p>
         You can also email me directly:
-        <a href="mailto:your-email@example.com">your-email@example.com</a>
+        <a href="mailto:your-email@example.com">ashishvishwakarmagovind@example.com</a>
       </p>
     </section>
-
   </main>
 
   <hr />
 
-  <!-- Footer Section -->
   <footer>
     <p>&copy; 2026 Vishwakarma Ashish Govind Prasad. All rights reserved.</p>
+    <p><a href="#about">Back to top</a></p>
   </footer>
 
 </body>
